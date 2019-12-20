@@ -34,17 +34,49 @@ Follow these steps for completing your project.
 
 Commit your code regularly and use descriptive messages. This helps both you (in case you ever need to return to old code) and your Team Lead.
 
+
+
+
+
+################################################################################
 ## Self-Study/Essay Questions
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is the purpose of using _sessions_?
 
+use sessions to store cookies that store data about the client, which for our purposes will be authentication
+
+
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+bcrypt allows us to hash the passwords in a manner that isn't reversible.
+
+
 
 - [ ] What does bcrypt do to slow down attackers?
 
+aside from hashing, it also provides salting, both manually and automatically, and uses accumulative hashing rounds
+
+
+
 - [ ] What are the three parts of the JSON Web Token?
+
+jwts have a header, a payload, and a signature.
+
+header contains the algorithm and token type
+
+payload contains the claims or data stored in the token
+
+signature uses a secret and combines the header and payload using base64 encoding
+
+
+
+################################################################################
+
+
+
 
 ## Minimum Viable Product
 
